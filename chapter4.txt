@@ -1,0 +1,57 @@
+Built in types
+
+Value types: integer, float, ranges, regular expression, atoms
+System types: pids, ports, references
+Collection types: Tuples, List, Maps, Binaries
+
+
+Integers : any size values, may contain underscores as separators, decimal, hexadecimal, octal and binary.
+
+Floats : decimal values, before and after dot number is required. exponential e can be provided. 1.0323e-5, 1.234e5
+
+atoms: constant that represents somethings name. :fred :binary? :var@2, :<> :=== :"hello world"
+
+Ranges : start .. end
+
+Regular Expressions :
+    ~r{}, ~r{}opts
+
+
+System types
+PID, Port, make_ref
+self
+
+Collection types
+Tuples :
+{status, count, action} = {:ok, 234, "next"}
+
+
+List 
+++, --, in
+
+[H|T]
+List is either empty List Or Head and Tail as a list itself
+
+Keyword List
+[name: pradeep, last: pillai, city: banglore]
+[{:name, pradeep}, {:last, pillai}, {:city, banglore}]
+
+Maps
+%{key => value, key => value}
+keyword Maps
+%{key: value, key: value}
+
+in keyword list keys can be repeated
+
+
+accessing map with []
+'' and "" are different
+
+Binaries
+<<>>
+<<1, 2>>
+
+
+Dates and Times
+
+
